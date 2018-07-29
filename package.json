@@ -1,0 +1,27 @@
+{
+  "name": "createjs-npm",
+  "version": "0.1.0",
+  "description": "createjs 的 cmd 标准版本，可以像 npm 包一样引入使用，同时也支持单个模块使用",
+  "main": "lib/create.js",
+  "scripts": {
+    "build": "webpack",
+    "prepublish": "npm run build"
+  },
+  "author": {
+    "name": "Tw93",
+    "email": "tw93@qq.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "exports-loader": "^0.7.0",
+    "imports-loader": "^0.8.0",
+    "easeljs": "^1.0.2",
+    "preloadjs": "^1.0.1",
+    "soundjs": "^1.0.1",
+    "tweenjs": "^1.0.2",
+    "webpack": "^3.0.0"
+  }
+}

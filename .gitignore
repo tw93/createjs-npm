@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+*.log
+.sw*
+.idea
+.idea/*
+.vscode
+!.gitignore
+!.editorconfig
