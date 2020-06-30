@@ -26,6 +26,9 @@ import createjs from 'createjs-npm/lib/tween';
 
 // 只引入 sound
 import createjs from 'createjs-npm/lib/sound';
+
+// 只引入某插件，如ColorPlugin
+import 'createjs-npm/lib/ColorPlugin';
 ```
 
 ## 包含
@@ -35,7 +38,13 @@ import createjs from 'createjs-npm/lib/sound';
       "easeljs": "^1.0.2",   // 用于 Sprites 、动画、向量和位图的绘制
       "preloadjs": "^1.0.1", // 网站资源预加载
       "soundjs": "^1.0.1",   // 音频播放引擎
-      "tweenjs": "^1.0.2"    // 用于做动画效果
+      "tweenjs": "^1.0.2",    // 用于做动画效果
+      "ColorPlugin": "^1.0.2",    // 用于颜色渐变插件
+      "CSSPlugin": "^1.0.2",    // 插件
+      "MotionGuidePlugin": "^1.0.2",    // 插件
+      "RelativePlugin": "^1.0.2",    // 插件
+      "RotationPlugin": "^1.0.2",    // 插件
+      "SamplePlugin": "^1.0.2",    // 插件
     }
   ```
 
@@ -46,6 +55,8 @@ import createjs from 'createjs-npm/lib/sound';
 - 找了一大圈，内外部没有看到好的解决方案，所以自己弄了一个放到 **createjs-npm** 下面
 
 ## 原理
-- 利用 imports-loader 进行导入到当前
+- 利用 imports-loader 进行导入到当前,将`this`指向windows
 - 利用 exports-loader 将弄好 createjs 的模块导出到全局
 
+## 案例
+[creatjs案例](https://github.com/raoenhui/react-example/blob/master/src/AniCreatejs/index.jsx)
