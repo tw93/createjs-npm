@@ -1,6 +1,6 @@
 {
   "name": "createjs-npm",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "createjs 的 cmd 标准版本，可以像 npm 包一样引入使用，同时也支持单个模块使用",
   "main": "lib/create.js",
   "scripts": {
